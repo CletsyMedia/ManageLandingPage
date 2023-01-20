@@ -213,6 +213,42 @@ main{
   justify-content: center;
   border-radius:30px;
 }
+.swiper-pagination-bullet{
+  border:5px solid var(--Bright-Red);
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--Bright-Red);
+}
+.testimonials{
+  text-align: center;
+  margin: 3rem 0;
+  gap:2rem;
+  width: 100%;
+}
+.testimonial-slider{
+}
+.testimonial-slider .slide{
+  width:400px;
+  height:230px;
+  background-color:rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius:5px;
+  margin:3rem 1rem 3rem 0;
+}
+.testimonial-slider img{
+  position: absolute;
+  width:60px;
+  top:-2rem;
+  left:50%;
+  transform: translateX(-50%);
+  overflow:visible;
+}
+.box{
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
 article{
   background-color: var(--Bright-Red);
   padding:1rem 0;

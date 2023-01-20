@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/Style.css">
+  <!-- swiper css link  -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <title>Frontend Mentor | Manage landing page</title>
 
 </head>
@@ -85,6 +87,56 @@
       </div>
     </section>
   </main>
+  <section class="testimonials">
+    <h1>What they've said</h1>
+    <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <div class="box">
+            <img src="./images/avatar-anisha.png" alt="avatar-anisha">
+          <div class="userInfo">
+            <h4>Anisha Li</h4>
+            <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+              visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="box">
+            <img src="./images/avatar-ali.png" alt="avatar-anisha">
+          <div class="userInfo">
+            <h4>Ali Bravo</h4>
+            <p>“We have been able to cancel so many other subscriptions since using 
+              Manage. There is no more cross-channel confusion and everyone is much 
+              more focused.”</p>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="box">
+            <img src="./images/avatar-richard.png" alt="avatar-anisha">
+          <div class="userInfo">
+            <h4>Richard Watts</h4>
+            <p>“Manage allows us to provide structure and process. It keeps us organized 
+              and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="box">
+            <img src="./images/avatar-shanai.png" alt="avatar-anisha">
+          <div class="userInfo">
+            <h4>Shanai Gough</h4>
+            <p>“Their software allows us to track, manage and collaborate on our projects 
+              from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <button class="btn">Get Started</button>
+  </section>
   <article>
     <div class="container">
       <div class="pattern1"></div>
@@ -138,5 +190,31 @@
 
 
   <script src="./appJS/app.js"></script>
+  <!-- swiper js link  -->
+<script src="./appJS/swiper-bundle.min.js"></script>
+<script>
+  // swiper
+var swiper = new Swiper(".testimonial-slider", {
+    spaceBetween:20,
+    grabCursor:true,
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets:true,
+    },
+    breakpoints: {
+       660: {
+         slidesPerView: 1,
+       },
+       768: {
+         slidesPerView: 2,
+       },
+       1024: {
+         slidesPerView: 3,
+       },
+    },
+ });
+</script>
 </body>
 </html>
