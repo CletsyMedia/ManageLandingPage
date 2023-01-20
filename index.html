@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/Style.css">
+  <title>Frontend Mentor | Manage landing page</title>
+
+</head>
+<body>
+    <header>
+    <div class="header">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-nav">Get started</button>
+      <div class="mobileMenu">
+        <div class="hamburger"><i class="fal fa-bars"></i></div>
+        <div class="menuClose"><i class="fal fa-times"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="pattern">
+
+    </div>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Bring everyone together to build better products.</h1>
+        <p>Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+          <button class="btn btn-hero">Get Started</button>
+      </div>
+      <div class="hero-right">
+        <img src="./images/illustration-intro.svg" alt="illustration-intro">
+      </div>
+    </section>
+    <section class="info">
+      <div class="leftInfo">
+        <h2>What’s different about Manage?</h2>
+        <p>Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams.</p>
+      </div>
+      <div class="rightInfo">
+        <div class="progressNum">
+          <div class="title">
+          <a href="#" class="btnInfo">01</a>
+          <h5>Track company-wide progress</h5>
+          </div>
+          <p>See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+        <div class="progressNum">
+          <div class="title">
+          <a href="#" class="btnInfo">02</a>
+          <h5>Advanced built-in reports</h5>
+          </div>
+          <p>Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.</p>
+        </div>
+        <div class="progressNum">
+          <div class="title">
+          <a href="#" class="btnInfo">03</a>
+          <h5>Everything you need in one place</h5>
+          </div>
+          <p>Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <article>
+    <div class="container">
+      <div class="pattern1"></div>
+      <div class="pattern2"></div>
+      <div class="team">
+        <h2>Simplify how your team works today.</h2>
+      </div>
+      <button type="submit" class="btn btnTeam">Get Started</button>
+    </div>
+  </article>
+    <footer>
+      <div class="footerContainer">
+        <div class="logohead">
+          <div class="logoFooter">
+            <img src="./images/footerLogo.svg" alt="">
+          </div>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="linkItems">
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <ul class="links">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="cta">
+          <form action="#" id="form">
+            <label for="">
+              <input type="email" placeholder="Updates in your inbox..." id="mailInfo" onkeyup="validateMail()" />
+              <span class="error"></span>
+            </label>
+            <button type="submit" class="btn formBtn">Go</button>
+          </form>
+          <p>Copyright&copy; 2023. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <script src="./appJS/app.js"></script>
+</body>
+</html>
