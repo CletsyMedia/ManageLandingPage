@@ -368,6 +368,9 @@ footer{
   .info{
     gap:10rem;
   }
+  .container{
+    margin: 0 2rem;
+  }
   .footerContainer{
     margin: 3rem 2rem;
   }
