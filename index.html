@@ -89,9 +89,11 @@
   </main>
   <section class="testimonials">
     <h1>What they've said</h1>
+
     <div class="swiper testimonial-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide">
+
+      <div class="swiper-wrapper content">
+        <div class="swiper-slide testimonialBox">
           <div class="box">
             <img src="./images/avatar-anisha.png" alt="avatar-anisha">
           <div class="userInfo">
@@ -101,18 +103,18 @@
           </div>
           </div>
         </div>
-        <div class="swiper-slide slide">
+        <div class="swiper-slide testimonialBox">
           <div class="box">
             <img src="./images/avatar-ali.png" alt="avatar-anisha">
           <div class="userInfo">
-            <h4>Ali Bravo</h4>
+            <h4>ALi Bravo</h4>
             <p>“We have been able to cancel so many other subscriptions since using 
               Manage. There is no more cross-channel confusion and everyone is much 
               more focused.”</p>
           </div>
           </div>
         </div>
-        <div class="swiper-slide slide">
+        <div class="swiper-slide testimonialBox">
           <div class="box">
             <img src="./images/avatar-richard.png" alt="avatar-anisha">
           <div class="userInfo">
@@ -122,7 +124,7 @@
           </div>
           </div>
         </div>
-        <div class="swiper-slide slide">
+        <div class="swiper-slide testimonialBox">
           <div class="box">
             <img src="./images/avatar-shanai.png" alt="avatar-anisha">
           <div class="userInfo">
@@ -133,8 +135,10 @@
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+
+    
     </div>
-    <div class="swiper-pagination"></div>
     <button class="btn">Get Started</button>
   </section>
   <article>
@@ -205,7 +209,7 @@ var swiper = new Swiper(".testimonial-slider", {
     },
     breakpoints: {
        660: {
-         slidesPerView: 1,
+         slidesPerView:1,
        },
        768: {
          slidesPerView: 2,
