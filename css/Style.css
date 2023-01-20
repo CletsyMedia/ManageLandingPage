@@ -452,6 +452,11 @@ footer{
     flex-direction: column-reverse;
     gap: 1rem;
   }
+  .hero-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .hero-left{
     align-items: center;
   }
