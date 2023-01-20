@@ -132,7 +132,8 @@ header .btn{
 .pattern::before{
   position: absolute;
   content: '';
-  background-image: url('../images/bg-tablet-pattern.svg') no-repeat;
+  background-image: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
   background-position: left bottom;
   background-size:800px;
   width:700px;
