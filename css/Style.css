@@ -799,10 +799,10 @@ footer{
   }
   .pattern::after{
     background-size:305px;
-    width:140px;
-    height:305px;
+    width:135px;
+    height:325px;
     right:0;
-    bottom:157rem;
+    bottom:151rem;
   }
   .title h5{
     font-size: 12px;
