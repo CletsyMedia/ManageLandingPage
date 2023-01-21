@@ -225,17 +225,15 @@ main{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap:2rem;
-  margin: 3rem 0;
+  margin:0 0 3rem 0;
 }
 .testimonials h1{
   font-size:30px;
-  margin-bottom: 2rem;
   color: var(--Dark-Blue);
 }
 .testimonial-slider{
   max-width:100%;
-  margin: 0 auto;
+  margin-bottom:2rem;
 }
 .content{
   display: flex;
@@ -427,6 +425,7 @@ footer{
   }
   .info{
     gap:10rem;
+    padding-bottom: 10px;
   }
   .container{
     margin: 0 2rem;
