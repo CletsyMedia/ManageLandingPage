@@ -649,6 +649,7 @@ footer{
     .hero-left{
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
     }
     .hero-left p{
       width:90%;
@@ -656,12 +657,17 @@ footer{
     .hero-left h1 {
       font-size:30px;
   }
-  .leftInfo p{
-    width: 90%;
+  .info{
+    margin: 0 auto;
   }
-    .leftInfo h2 {
+  .leftInfo h2 {
       margin: 0 1.5rem;
       line-height: 1.3;
+      text-align: center;
+  }
+  .leftInfo p{
+    width:90%;
+    margin: 0;
   }
   .info{
     padding-top: 5rem;
