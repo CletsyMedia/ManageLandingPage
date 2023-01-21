@@ -93,14 +93,14 @@
     <div class="swiper testimonial-slider">
 
       <div class="swiper-wrapper content">
-        <div class="swiper-slide testimonialBox">
+        <div class="swiper-slide testimonialBox" data-swiper-autoplay="5000">
           <div class="box">
             <img src="./images/avatar-anisha.png" alt="avatar-anisha">
-          <div class="userInfo">
-            <h4>Anisha Li</h4>
-            <p>“Manage has supercharged our team’s workflow. The ability to maintain 
-              visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
+            <div class="userInfo">
+              <h4>Anisha Li</h4>
+              <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
           </div>
         </div>
         <div class="swiper-slide testimonialBox">
@@ -199,7 +199,7 @@
 <script>
   // swiper
 var swiper = new Swiper(".testimonial-slider", {
-    spaceBetween:20,
+    spaceBetween:30,
     grabCursor:true,
     loop:true,
     pagination: {
@@ -207,6 +207,12 @@ var swiper = new Swiper(".testimonial-slider", {
       clickable: true,
       dynamicBullets:true,
     },
+    autoplay: {
+    delay:5000,
+    speed: 2800,
+    disableOnInteraction: false,
+    // pauseOnMouseEnter: true,
+  },
     breakpoints: {
        660: {
          slidesPerView:1,
