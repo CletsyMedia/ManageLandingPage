@@ -661,9 +661,6 @@ footer{
   .cta form{
     width: 90%;
   }
-  .btnTeam{
-    width:20%;
-  }
   .linkItems{
     margin-left:1.7rem;
   }
@@ -724,8 +721,6 @@ footer{
   }
   .container{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .team{
     display: flex;
@@ -792,6 +787,7 @@ footer{
   }
   .author{
     font-size: 10px;
+    bottom:-3rem;
   }
 }
 @media(max-width:380px){
