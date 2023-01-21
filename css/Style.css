@@ -40,6 +40,7 @@ body {
   --Bright-Red: hsl(12, 88%, 59%);
   --Dark-Blue: hsl(228, 39%, 23%);
   --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Gray-white: hsla(0, 0%, 100%, 0.6);
   --Very-Dark-Blue: hsl(233, 12%, 13%);
   --Very-Pale-Red: hsl(13, 100%, 96%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
@@ -52,7 +53,7 @@ body {
   padding:12px 25px;
   border-radius:25px;
   cursor: pointer;
-  box-shadow: var(--bxs);
+  box-shadow: var(--bxs) var(--Bright-Red);
 }
 .btn:hover{
   background-color:var(--Btn-Hover);
@@ -220,12 +221,19 @@ main{
   background-color: var(--Bright-Red);
 }
 .testimonials{
+  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin:0 0 3rem 0;
+}
+.patternTesty{
+  position: absolute;
+  left:-23rem;
+  top:-19rem;
+  width:700px;
 }
 .testimonials h1{
   font-size:30px;
@@ -430,6 +438,13 @@ footer{
   .container{
     margin: 0 2rem;
   }
+  .patternTesty {
+    left: -26rem;
+    top: -15rem;
+  }
+  .testimonials{
+    margin-top: 1rem;
+  }
   .footerContainer{
     margin: 3rem 2rem;
   }
@@ -450,9 +465,15 @@ footer{
   .linkItems{
     gap:3rem;
   }
+  .patternTesty {
+    left: -16rem;
+    top: -21rem;
+    width: 600px;
+  }
+  
 }
 
-@media(max-width:768px){
+@media(max-width:798px){
   nav{
     position:absolute;
     width: 100%;
@@ -521,13 +542,15 @@ footer{
   }
   .hero-left{
     align-items: center;
+    margin: 0 6rem;
   }
   .hero-left p,
   .hero-left h1{
     width: 100%;
+    text-align: center;
   }
   .hero-left h1{
-    font-size:40px;
+    font-size:35px;
     text-align: center;
   }
   .info{
@@ -535,6 +558,10 @@ footer{
     justify-content: center;
     flex-direction: column;
     gap:2rem;
+    margin: 0 6rem;
+  }
+  .leftInfo p{
+    text-align: center;
   }
   .progressNum{
     margin-bottom: 1.5rem;
@@ -545,10 +572,11 @@ footer{
   }
   .title{
     position: relative;
-    background-color: var(--Very-Pale-Red);
+    background:linear-gradient(to right, var(--Very-Pale-Red) 60%, var(--Gray-white)) ;
     width: 110%;
     height:54px;
-    border-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
     margin-bottom:1rem;
   }
   .title h5{
@@ -572,6 +600,21 @@ footer{
   }
   .pattern2{
     display: none;
+  }
+  .patternTesty{
+    display: none;
+  }
+  .patternTesty::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size:800px;
+    width:700px;
+    height:770px;
+    top: -19.5rem;
   }
   .footerContainer{
     margin:3rem 1rem;
